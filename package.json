@@ -1,0 +1,13 @@
+{
+  "name": "rgl-performance-test",
+  "private": true,
+  "workspaces": [
+    "packages/v1",
+    "packages/v2"
+  ],
+  "scripts": {
+    "dev:v1": "npm run dev --workspace=packages/v1",
+    "dev:v2": "npm run dev --workspace=packages/v2",
+    "build": "npm run build --workspace=packages/v1 && npm run build --workspace=packages/v2"
+  }
+}
